@@ -116,6 +116,7 @@ $(".number").on("click", function(){
 });
 
 $(".operator").on("click", function(){
+    if (operator.length >= 1){ $("#operator").empty();}
     operator = $(this).val();
     console.log(operator);
     $("#operator").append(operator);
