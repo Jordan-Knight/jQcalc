@@ -77,6 +77,11 @@
 
 <script type="text/javascript">
 
+var value1 = "";
+var value2 = "";
+var result = "";
+var operator = "";
+
 $(document).ready(function(){
 
 //Button click passes value to our math function.
@@ -88,6 +93,31 @@ $(document).ready(function(){
 //Concatenate int values
 
 //Create evaluated value.
+
+switch (operator) {
+    case "+":
+        return value1 + value2;
+        break;
+
+    case "-":
+        return value1 - value2;
+        break;
+
+    case "*":
+        return value1 * value2;
+        break;
+
+    case "/":
+        return value1 / value2;
+        break;
+
+    case "^":
+        return value1 ^ value2;
+        break;
+
+    default:
+        break;
+}
 
 
 
